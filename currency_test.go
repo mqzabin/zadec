@@ -183,7 +183,7 @@ func FuzzMul(f *testing.F) {
 	}
 
 	fuzzdecimal.Fuzz(f, 2, func(t *fuzzdecimal.T) {
-		fuzzdecimal.AsDecimalComparison2(t, "Add", parseDecimal, parseShopspringDecimal,
+		fuzzdecimal.AsDecimalComparison2(t, "Mul", parseDecimal, parseShopspringDecimal,
 			func(t *fuzzdecimal.T, x1, x2 decimal.Decimal) (string, error) {
 				t.Helper()
 
