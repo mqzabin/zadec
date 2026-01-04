@@ -1,4 +1,4 @@
-package moedinha
+package zadec
 
 const zeroRune = '0'
 

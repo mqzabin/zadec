@@ -1,4 +1,4 @@
-package moedinha
+package zadec
 
 import (
 	"strconv"
@@ -211,8 +211,7 @@ func BenchmarkNewFromString(b *testing.B) {
 		sCurrency decimal.Decimal
 	)
 
-	b.Run("moedinha", func(b *testing.B) {
-
+	b.Run("zadec", func(b *testing.B) {
 		for i := 0; i < b.N; i++ {
 			x, _ := NewFromString(aStr)
 
@@ -240,7 +239,7 @@ func BenchmarkString(b *testing.B) {
 		sCurrency string
 	)
 
-	b.Run("moedinha", func(b *testing.B) {
+	b.Run("zadec", func(b *testing.B) {
 		x, _ := NewFromString(aStr)
 
 		for i := 0; i < b.N; i++ {
@@ -252,7 +251,6 @@ func BenchmarkString(b *testing.B) {
 		x, _ := decimal.NewFromString(aStr)
 
 		for i := 0; i < b.N; i++ {
-
 			sCurrency = x.String()
 		}
 	})
@@ -270,7 +268,7 @@ func BenchmarkAdd(b *testing.B) {
 		sCurrency decimal.Decimal
 	)
 
-	b.Run("moedinha", func(b *testing.B) {
+	b.Run("zadec", func(b *testing.B) {
 		x, _ := NewFromString(aStr)
 
 		y, _ := NewFromString(bStr)
@@ -303,7 +301,7 @@ func BenchmarkSub(b *testing.B) {
 		sCurrency decimal.Decimal
 	)
 
-	b.Run("moedinha", func(b *testing.B) {
+	b.Run("zadec", func(b *testing.B) {
 		x, _ := NewFromString(aStr)
 
 		y, _ := NewFromString(bStr)
@@ -336,7 +334,7 @@ func BenchmarkMul(b *testing.B) {
 		sCurrency decimal.Decimal
 	)
 
-	b.Run("moedinha", func(b *testing.B) {
+	b.Run("zadec", func(b *testing.B) {
 		x, _ := NewFromString(aStr)
 
 		y, _ := NewFromString(bStr)

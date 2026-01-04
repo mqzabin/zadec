@@ -1,4 +1,4 @@
-module github.com/mqzabin/moedinha
+module github.com/mqzabin/zadec
 
 go 1.23.2
 

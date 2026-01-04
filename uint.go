@@ -1,4 +1,4 @@
-package moedinha
+package zadec
 
 import "fmt"
 

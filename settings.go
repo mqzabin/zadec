@@ -1,4 +1,4 @@
-package moedinha
+package zadec
 
 const (
 	// numberOfUints stores the amount of uint64 used to represent the currency.
